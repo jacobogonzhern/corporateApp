@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "nombre": "Portátil Dell",
+    "unidades": 12,
+    "precio": 1200,
+    "foto": "assets/images/dell.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Monitor LG",
+    "unidades": 8,
+    "precio": 299,
+    "foto": "assets/images/lg.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Teclado Logitech",
+    "unidades": 25,
+    "precio": 59.99,
+    "foto": "assets/images/teclado.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Ratón Razer",
+    "unidades": 30,
+    "precio": 45.5,
+    "foto": "assets/images/raton.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Auriculares Sony",
+    "unidades": 15,
+    "precio": 129,
+    "foto": "assets/images/auriculares.jpg"
+  }
+]

@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Contacto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-input [(ngModel)]="correo" type="email" label="Correo" labelPlacement="floating"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-textarea [(ngModel)]="mensaje" label="Mensaje" labelPlacement="floating"></ion-textarea>
+  </ion-item>
+  <ion-button expand="block" (click)="enviar()">Enviar</ion-button>
+
+  @if (enviado()) {
+    <p>Mensaje guardado correctamente.</p>
+  }
+
+  <ion-list>
+    @for (m of mensajes(); track $index) {
+      <ion-item>
+        <ion-label>
+          <h3>{{ m.correo }}</h3>
+          <p>{{ m.mensaje }} ({{ m.fecha }})</p>
+        </ion-label>
+      </ion-item>
+    }
+  </ion-list>
+</ion-content>
